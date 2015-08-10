@@ -24,7 +24,7 @@ done
 
 
 
-for i in `pkgutil --pkgs=com.microsoft.office*`;
+for i in `pkgutil --pkgs=com.microsoft.package*`;
 do
 	pkgutil --forget $i
 done
