@@ -6,7 +6,7 @@ rm -R /Applications/Microsoft\ OneNote.app
 rm -R /Applications/Microsoft\ Outlook.app
 rm -R /Applications/Microsoft\ Powerpoint.app
 for u in `ls /Users`; do
-	cd /$u/Library/Containers
+	cd /Users/$u/Library/Containers
 	rm -R com.microsoft.errorreporting
 	rm -R com.micosoft.netlib.shipassertprocess
 	rm -R com.micosoft.Excel
