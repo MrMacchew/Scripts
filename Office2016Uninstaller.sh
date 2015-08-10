@@ -3,7 +3,7 @@
 rm -R /Applications/Microsoft\ Excel.app
 rm -R /Applications/Microsoft\ Word.app
 rm -R /Applications/Microsoft\ OneNote.app
-rm -R /Applications/Microsoft\ Outloo.app
+rm -R /Applications/Microsoft\ Outlook.app
 rm -R /Applications/Microsoft\ Powerpoint.app
 
 rm -R com.microsoft.errorreporting
