@@ -5,15 +5,18 @@ rm -R /Applications/Microsoft\ Word.app
 rm -R /Applications/Microsoft\ OneNote.app
 rm -R /Applications/Microsoft\ Outlook.app
 rm -R /Applications/Microsoft\ Powerpoint.app
-
-rm -R com.microsoft.errorreporting
-rm -R com.micosoft.netlib.shipassertprocess
-rm -R com.micosoft.Excel
-rm -R com.micosoft.Office365ServiceV2
-rm -R com.micosoft.Powerpoint
-rm -R com.micosoft.RMS-XPCService
-rm -R com.micosoft.Word
-rm -R com.micosoft.onenote.mac
+for u in `ls /Users`; do
+	cd $u/Library/Containers
+	rm -R com.microsoft.errorreporting
+	rm -R com.micosoft.netlib.shipassertprocess
+	rm -R com.micosoft.Excel
+	rm -R com.micosoft.Office365ServiceV2
+	rm -R com.micosoft.Powerpoint
+	rm -R com.micosoft.RMS-XPCService
+	rm -R com.micosoft.Word
+	rm -R com.micosoft.onenote.mac
+	
+done
 
 rm -R UBF8T346G9.ms
 rm -R UBF8T346G9.Office
