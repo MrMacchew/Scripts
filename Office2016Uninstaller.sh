@@ -16,11 +16,13 @@ for u in `ls /Users`; do
 	rm -R com.micosoft.Word
 	rm -R com.micosoft.onenote.mac
 	
+	cd /Users/$u/Library/Group\ Containers
+	rm -R UBF8T346G9.ms
+	rm -R UBF8T346G9.Office
+	rm -R UBF8T3469.OfficeOsfWebHost
 done
 
-rm -R UBF8T346G9.ms
-rm -R UBF8T346G9.Office
-rm -R UBF8T3469.OfficeOsfWebHost
+
 
 for i in `pkgutil --pkgs=com.microsoft.office*`;
 do
